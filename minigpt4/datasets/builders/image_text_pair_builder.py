@@ -24,7 +24,7 @@ from minigpt4.datasets.datasets.vindrcxr import VinDrCXRDataset
 class GroundedCaptionBuilder(BaseDatasetBuilder):
     train_dataset_cls = VinDrCXRDataset
     DATASET_CONFIG_DICT = {
-        "default": "configs/datasets/flickr/default.yaml",
+        "default": "configs/datasets/vindrcxr/default.yaml",
     }
 
     def build_datasets(self):
