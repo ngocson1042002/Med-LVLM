@@ -50,7 +50,7 @@ run:
   device: "cuda"
   world_size: 1
   dist_url: "env://"
-  distributed: True
+  distributed: False
 
   wandb_log: True
   job_name: minigptv2_finetune_vindrcxr
