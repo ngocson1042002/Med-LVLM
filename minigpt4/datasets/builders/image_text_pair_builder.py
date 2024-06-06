@@ -20,7 +20,7 @@ from minigpt4.datasets.datasets.ocrvqa_dataset import OCRVQADataset
 from minigpt4.datasets.datasets.coco_caption import COCOCapDataset
 from minigpt4.datasets.datasets.vindrcxr import VinDrCXRDataset
 
-@registry.register_builder("vindrcxr_grounded_diseases")
+@registry.register_builder("vindrcxr")
 class GroundedCaptionBuilder(BaseDatasetBuilder):
     train_dataset_cls = VinDrCXRDataset
     DATASET_CONFIG_DICT = {
