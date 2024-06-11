@@ -18,10 +18,10 @@ from minigpt4.datasets.datasets.aok_vqa_datasets import AOKVQADataset
 from minigpt4.datasets.datasets.coco_vqa_datasets import COCOVQADataset
 from minigpt4.datasets.datasets.ocrvqa_dataset import OCRVQADataset
 from minigpt4.datasets.datasets.coco_caption import COCOCapDataset
-from minigpt4.datasets.datasets.vindrcxr import VinDrCXRDataset
+from minigpt4.datasets.datasets.vindrcxr_dataset import VinDrCXRDataset
 
 @registry.register_builder("vindrcxr")
-class GroundedCaptionBuilder(BaseDatasetBuilder):
+class VinDrCXRBuilder(BaseDatasetBuilder):
     train_dataset_cls = VinDrCXRDataset
     DATASET_CONFIG_DICT = {
         "default": "configs/datasets/vindrcxr/default.yaml",
